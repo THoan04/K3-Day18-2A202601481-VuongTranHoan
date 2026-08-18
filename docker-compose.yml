@@ -9,3 +9,8 @@ services:
 
 volumes:
   qdrant_data:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: D:/qdrant_local_db
